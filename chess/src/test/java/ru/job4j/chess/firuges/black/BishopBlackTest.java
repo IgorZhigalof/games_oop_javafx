@@ -39,7 +39,8 @@ class BishopBlackTest {
                     bishop.way(dest);
                 }
         );
-        assertThat(expected.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", start, dest);
+        assertThat(expected.getMessage())
+                .isEqualTo("Could not way by diagonal from %s to %s", start, dest);
     }
 
     @Test
