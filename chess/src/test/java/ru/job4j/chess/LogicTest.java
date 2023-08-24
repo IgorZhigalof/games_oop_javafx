@@ -33,7 +33,7 @@ public class LogicTest {
         OccupiedCellException exception = assertThrows(OccupiedCellException.class, () -> {
             logic.move(start, dest);
         });
-        assertThat(exception.getMessage()).isNull();
+        assertThat(exception.getMessage()).isEqualTo("There's a figure on the way");
     }
 
     @Test
